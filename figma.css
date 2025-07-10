@@ -1,0 +1,155 @@
+header ul li {
+    text-decoration: none;
+    color: grey;
+}
+
+.text-awal {
+    font-size: 12rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.foto-dylan{
+    border-radius: 50%;
+}
+
+.aboutMe {
+    margin-top: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.photoHal2 {
+    position: absolute;
+    margin-top: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.dylan {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: 50;
+    font-size: 5rem;
+
+}
+
+.fotohal2 {
+    border-radius: 50%;
+}
+
+.aboutMe {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px;
+    border-radius: 50px;
+    color: #1d4ed8;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.tulisHobi {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.kata3 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.tulisPhotography {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.scroll-btn {
+    font-size: 2rem;
+    background-color: #e2e8f0;
+    /* Tailwind gray-200 */
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.375rem;
+}
+
+.gallery-scroll {
+    display: flex;
+    overflow: hidden;
+    width: 960px;
+    /* 3 images * 320px each */
+    scroll-behavior: smooth;
+}
+
+.gallery-item {
+    flex: 0 0 320px;
+    height: 450px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+
+
+
+    .gallery-scroll {
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .gallery-item {
+        flex: 0 0 80%;
+        margin-right: 1rem;
+        scroll-snap-align: center;
+    }
+
+    .scroll-btn {
+        display: none;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .halDua{
+        flex: 0 0 80%;
+        width: 100%;
+    }
+    #namaDylan,
+    .aboutMe {
+        padding-left: 1rem; 
+        text-align: center; 
+        
+    }
+    #namaDylan{
+        padding-bottom : 2rem;
+    }
+    
+
+
+    .photoHal2 img {
+        display: none;
+    }
+}
